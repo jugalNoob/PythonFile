@@ -1,1 +1,0 @@
-print("jugal shjarma jugal sharma")

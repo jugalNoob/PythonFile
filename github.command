@@ -33,12 +33,20 @@ pwd --> this command check file loacl
 git config user.name "jugalNoob" -->set your name
 git config user.email  "sjugal126@gmail" --> set your name
 
+
+git config --global user.name ""
+
+git config --global user.email
+
 git config --list -->check all user information
 
 git init -->create folder add all information
 
 git status -->check file status
 
+git log  -->check status and check commint
+
+git rm <file_name> -->remove File
 
 ////|||Three -- stage -- architecture |||///||||
 
@@ -47,6 +55,90 @@ git status -->check file status
 2::staging  are
 
 3::git directory (Repository)
+
+
+
+||||||||||GitClone Folder |||||||||
+git clone https://github.com/jugalNoob/PythonFile.git -->clone your website
+
+git clone https://github.com/user/repo.git my-local-directory
+
+ls -->check files
+
+clear
+
+git commit -m "PythonFile"
+
+
+|||||||Git gitignore ||||||||||||||||||
+
+.gitignore
+
+# This is a comment, Git will ignore it
+
+demo/ -->folder ignore
+
+
+
+|||||||||||File status File Cycle GIt|||||||||||||||||||||
+
+Here's how the commands you mentioned relate to these statuses:
+
+git init:::: Initializes a new Git repository in the current directory.
+ Initially, all files are untracked.
+
+git status:::: Shows you the status of files in your repository,
+ including untracked, modified, staged, and committed files.
+
+git add:::: Stages modifications made to a file, changing its 
+status from modified to staged.
+
+git commit:::: Records the staged changes, changing the status of those
+ files to committed.
+
+
+
+
+|||||||||||||||||Commits  staging area & working directory difference||||||||||||
+
+
+git diff
+
+git diff --staged -->changes in git show  all changes
+git add py.py // single file 
+
+git restore --staged py.py  --> command  convert to modified
+
+
+git restore py.py -->restore your code 
+
+
+git checkpout -f  --> restore your add in your file
+
+git checkpout file.txt -->single file 
+
+
+||||||||||||Renaming and Moving  Files in Git||||||||||||
+
+git mv py.py jugal.py --chnages Your file file_name
+
+git rm jugal.py --> remove files
+
+git push origin <branch_name> -->Update 
+
+git rm --cached jugal.py -->remove file 
+
+touch newfile.txt --> linux command
+
+echo.>newfile.txt
+
+git push origin <branch_name>
+
+
+
+||||||||||||||Working on Reopitory Remotely||||||||||||||||||||||
+
+git remote add origin https://github.com/jugal-chanda/python_practice.git
 
 
 
